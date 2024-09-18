@@ -1,12 +1,18 @@
 "use client";
 // Interactions are handled client side not server side
+import { useState } from "react";
 
 export default function Home() {
-  let score = 0;
+  // let score = 0;
+  const [score, setScore] = useState(1);
+
+  // Deconstructing Arrays
+  // 1. the variable name doesn't matter
+  // 2. the order does matter
 
   function addToScore() {
-    score++;
-    console.log(score);
+    // score++;
+    setScore(score + 1);
   }
 
   return (
